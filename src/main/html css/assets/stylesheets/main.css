@@ -78,6 +78,7 @@ body {
 }
 
 .main {
+    width: 100%;
     border: 5px double black;
     background: linear-gradient(to bottom, LightGray , LightSlateGrey);
     padding-top: 60px;
@@ -179,4 +180,38 @@ footer {
     border: 5px double black;
     background: linear-gradient(to left, LightGray , LightSlateGrey);
     margin-top: 100px;
+}
+
+/*
+===================================
+    Inputs
+===================================
+*/
+
+fieldset {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    width: auto;
+    border: 1px double black;
+    padding: 5%;
+}
+
+input, textarea {
+    display: inherit;
+    margin: 2.5%;
+    padding: 2.5%;
+    border-radius: 5px;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: auto;
+}
+
+textarea {
+    width: 80%;
+}
+
+.submit-btn {
+    padding: 5px;
+    width: 10%;
+    height: 10%;
 }
