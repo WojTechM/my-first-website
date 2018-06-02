@@ -9,7 +9,6 @@
 
 
     <body>
-
         <div class="site">
             <nav-menu class="nav">
                 <a class="button" href="contact.html">Contact<br/></a>
@@ -26,28 +25,38 @@
 
                 <fieldset>
                     <legend>Contact</legend>
+
                     <label>
                         Username
-                        <input type="text" name="username" placeholder="Your name">
+                        <input id="username" type="text" name="username" placeholder="Your name"/>
                     </label>
+
                     <label>
                         Email
-                        <input type="text" name="email" placeholder="Your email" required>
+                        <input id="email" type="text" name="email" placeholder="Your email" required/>
                     </label>
+
                     <label>
                         Message
-                        <textarea name="message" rows="10">Add your message here</textarea>
+                        <textarea id="message" class="textarea" name="message" rows="10">Add your message here</textarea>
                     </label>
-                    <input class="submit-btn" type="submit" name="submit" value="Send" disabled>
+
+                    <button id="submit-btn" class="submit-btn" type="button" onclick="sendMessage()" disabled>
+                        Send message
+                    </button>
 
                 </fieldset>
 
                 <footer id="primary-footer" class="container">
                     <small>&copy; null++ studios</small>
                 </footer>
+
             </div>
+
         </div>
 
+        <script src="js/contactValidator.js"></script>
+        <script src="js/contactSubmitBtnBehaviour.js"></script>
 
     </body>
 
