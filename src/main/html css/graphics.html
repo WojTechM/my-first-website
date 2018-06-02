@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <link rel="stylesheet" href="assets/stylesheets/main.css">
+        <link rel="stylesheet" href="assets/stylesheets/graphics.css">
         <meta charset="UTF-8">
         <title>My first website!</title>
     </head>
@@ -10,14 +10,73 @@
 
     <body>
 
-        <header class="container">
-            <a class="button" href="index.html">My first website!</a>
-        </header>
+        <div class="site">
+            <nav-menu class="nav">
+                <a class="button" href="contact.html">Contact<br/></a>
+                <a class="button" href="description.html">Description<br/></a>
+                <a class="button" href="graphics.html">Graphics<br/></a>
+                <a class="button" href="multiple-column.html">Data<br/></a>
+                <a class="button" href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
+            </nav-menu>
 
-        <footer class="container">
-            <small>&copy; null++ studios</small>
-        </footer>
+            <div class="main content">
+                <header class="container">
+                    <a class="button header" href="index.html">My first website!</a>
+                </header>
 
+                <photo>
+                    <h1>Old code</h1>
+                    <img src="assets/oldCode.jpg" alt="oldCode.jpg"/>
+                </photo>
+
+                <photo>
+                    <h1>Recursion</h1>
+                    <img src="assets/recursion.jpg" alt="recursion.jpg"/>
+                </photo>
+
+                <photo>
+                    <h1>PHP programming...</h1>
+                    <img src="assets/php.png" alt="php.png"/>
+                </photo>
+
+                <photo>
+                    <h1>Html joke</h1>
+                    <img src="assets/html.jpg" alt="html.jpg"/>
+                </photo>
+
+                <photo>
+                    <h1>Errors..</h1>
+                    <img src="assets/Errors.jpg" alt="Errors.jpg"/>
+                </photo>
+
+                <photo>
+                    <h1>Git jokes</h1>
+                    <img src="assets/Git.jpeg" alt="Git.jpeg"/>
+                </photo>
+
+                <photo>
+                    <h1>Only God</h1>
+                    <img src="assets/godKnows.jpg" alt="godKnows.jpg"/>
+                </photo>
+
+                <photo>
+                    <h1>true..</h1>
+                    <img src="assets/true.jpeg" alt="true.jpeg"/>
+                </photo>
+
+                <footer id="primary-footer" class="container">
+                    <small>&copy; null++ studios</small>
+                    <button onclick="topFunction()" id="goTopBtn" title="Go to top">Top</button>
+                </footer>
+            </div>
+        </div>
+
+        <script>
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
     </body>
 
 </html>
