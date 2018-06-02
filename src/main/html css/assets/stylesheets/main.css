@@ -199,6 +199,7 @@ fieldset {
 
 input, textarea {
     display: inherit;
+    background-color: azure;
     margin: 2.5%;
     padding: 2.5%;
     border-radius: 5px;
