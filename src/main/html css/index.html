@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="pl">
+<html lang="en">
 
     <head>
         <link rel="stylesheet" href="assets/stylesheets/main.css">
@@ -11,38 +11,55 @@
 
     <body>
 
-        <header class="container">
-            <a class="button" href="index.html">My first website!</a>
-        </header>
+        <div class="site group">
+            <nav-menu class="nav group">
+                <a class="button" href="contact.html">Contact<br/></a>
+                <a class="button" href="description.html">Description<br/></a>
+                <a class="button" href="graphics.html">Graphics<br/></a>
+                <a class="button" href="multiple-column.html">Data<br/></a>
+                <a class="button" href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
+            </nav-menu>
 
-        <div class="content project-info">
-            <p>This project was created to help me understand the html and css better</p>
-            <img src="assets/brain.jpg" height="400" width="500">
-            <p>My name is Wojciech Makieła and im from Poland</p>
+            <div class="main content group">
+                <header class="container">
+                    <a class="button header" href="index.html">My first website!</a>
+                </header>
+
+                <div class="content project-info group">
+                    <p>This project was created to help me understand the html and css better</p>
+                    <img src="assets/brain.jpg" height="400" width="500" alt="missing pic">
+                    <p>My name is Wojciech Makieła and im from Poland. Since this paragraph needs to be longer
+                        for tests purposes only, I'll add part of article from wikipedia.com.
+                        Leptinella filiformis, or slender button daisy, is a species of flowering plant in the daisy
+                        family, found only in the north-eastern part of the South Island of New Zealand.
+                        Thought to be extinct by the 1980s, it was rediscovered growing on a hotel lawn in 1998,
+                        and in the wild in 2015.
+                    </p>
+                </div>
+
+                <article class="content long-text group">
+                    <h1>Stefan Lochner</h1> (the Dombild Master or Master Stefan) (c. 1410–1451) was a German painter
+                    working in the late "soft style" of the International Gothic. His paintings combine that era's
+                    tendency toward long flowing lines and brilliant colours with the realism, virtuoso surface
+                    textures and innovative iconography of the early Northern Renaissance. Based in Cologne, a
+                    commercial and artistic hub of northern Europe, Lochner was one of the most important German
+                    painters before Albrecht Dürer. Extant works include single-panel oil paintings, devotional
+                    polyptychs and illuminated manuscripts, which often feature fanciful and blue-winged angels.
+                    Today some thirty-seven individual panels are attributed to him with confidence.
+                </article>
+
+                <article class="content long-text group">
+                    <h1>Operation Vanguard</h1> is a Military Police Joint Task Force (JTF) set up by the President of Ghana
+                    in 2017 to combat the operation of galamsey in the country. Galamseyers are illegal miners and
+                    have over the years depleted Ghana's forest cover. Their activities also pollute water bodies due
+                    to the crude and unregulated nature of the mining process.
+                </article>
+
+                <footer id="primary-footer" class="container group">
+                    <small>&copy; null++ studios</small>
+                </footer>
+            </div>
         </div>
-
-        <article class="content long-text">
-            Stefan Lochner (the Dombild Master or Master Stefan) (c. 1410–1451) was a German painter
-            working in the late "soft style" of the International Gothic. His paintings combine that era's
-            tendency toward long flowing lines and brilliant colours with the realism, virtuoso surface
-            textures and innovative iconography of the early Northern Renaissance. Based in Cologne, a
-            commercial and artistic hub of northern Europe, Lochner was one of the most important German
-            painters before Albrecht Dürer. Extant works include single-panel oil paintings, devotional
-            polyptychs and illuminated manuscripts, which often feature fanciful and blue-winged angels.
-            Today some thirty-seven individual panels are attributed to him with confidence.
-        </article>
-
-        <nav-menu class="nav">
-            <a class="button" href="contact.html">Contact</a>
-            <a class="button" href="description.html">Description</a>
-            <a class="button" href="graphics.html">Graphics</a>
-            <a class="button" href="multiple-column.html">Data</a>
-            <a class="button" href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
-        </nav-menu>
-
-        <footer class="container">
-            <small>&copy; null++ studios</small>
-        </footer>
 
     </body>
 
