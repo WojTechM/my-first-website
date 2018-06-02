@@ -197,7 +197,7 @@ fieldset {
     padding: 5%;
 }
 
-input, textarea {
+input, textarea, button {
     display: inherit;
     background-color: azure;
     margin: 2.5%;
