@@ -163,6 +163,10 @@ img {
 ===================================
 */
 
+h1 {
+    text-decoration: underline;
+}
+
 article {
     clear:both;
     margin: 25px 0px;
