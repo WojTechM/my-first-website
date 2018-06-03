@@ -67,7 +67,10 @@ table {
 body {
     background-image: url("../thunderstorm.jpg");
     background-size: 100%;
+    background-attachment: fixed;
     margin-top: 20px;
+    font-size: 28px;
+    color: rgba (188, 240, 225);
 }
 
 .site {
@@ -80,7 +83,7 @@ body {
 .main {
     width: 100%;
     border: 5px double black;
-    background: linear-gradient(to bottom, LightGray , LightSlateGrey);
+    background: linear-gradient(to bottom, rgba(131, 137, 245, 0.4) , rgba(255, 255, 255, 0.7));
     padding-top: 60px;
 }
 
@@ -91,7 +94,7 @@ body {
 */
 nav-menu {
     border: 5px double black;
-    background: linear-gradient(to left, LightGray , LightSlateGrey);
+    background: linear-gradient(to left, rgba(131, 137, 245, 0.4) , rgba(255, 255, 255, 0.7));
     padding-top: 60px;
     margin-right: 10px;
 }
@@ -108,11 +111,6 @@ nav-menu {
 
 .nav a:hover {
     background-color: #ccc; /* Dark grey background on mouse-over */
-}
-
-.nav a.active {
-    background-color: #4CAF50; /* Add a green color to the "active/current" link */
-    color: white;
 }
 /*
 ===================================
@@ -151,6 +149,7 @@ nav-menu {
 */
 
 img {
+    opacity: 0.8;
     float: right;
     border-radius: 50%;
     margin-left: 5%;
@@ -184,6 +183,7 @@ footer {
     border: 5px double black;
     background: linear-gradient(to left, LightGray , LightSlateGrey);
     margin-top: 100px;
+    text-transform: uppercase;
 }
 
 /*
