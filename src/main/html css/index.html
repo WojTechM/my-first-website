@@ -3,7 +3,7 @@
 <html lang="en">
 
     <head>
-        <link rel="stylesheet" href="assets/stylesheets/main.css">
+        <link rel="stylesheet" href="assets/stylesheets/index.css">
         <meta charset="UTF-8">
         <title>My first website!</title>
     </head>
@@ -11,56 +11,93 @@
 
     <body>
 
-        <div class="site group">
-            <nav-menu class="nav group">
-                <a class="button" href="contact.html">Contact</a>
-                <a class="button" href="description.html">Description</a>
-                <a class="button" href="graphics.html">Graphics</a>
-                <a class="button" href="info.html">Info</a>
-                <a class="button" href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
-            </nav-menu>
+        <div id="site" class="ftop-bottom">
 
-            <div class="main content group">
-                <header class="container">
-                    <a class="button header" href="index.html">My first website!</a>
-                </header>
+            <div class="fleft-right">
 
-                <div class="content project-info group">
-                    <p>This project was created to help me understand the html and css better</p>
-                    <img src="assets/brain.jpg" height="400" width="500" alt="missing pic">
-                    <p>My name is Wojciech Makieła and im from Poland. Since this paragraph needs to be longer
-                        for tests purposes only, I'll add part of article from wikipedia.com.
-                        Leptinella filiformis, or slender button daisy, is a species of flowering plant in the daisy
-                        family, found only in the north-eastern part of the South Island of New Zealand.
-                        Thought to be extinct by the 1980s, it was rediscovered growing on a hotel lawn in 1998,
-                        and in the wild in 2015.
-                    </p>
+                <nav-menu class="nav ftop-bottom">
+                    <a class="button" href="contact.html">Contact</a>
+                    <a class="button" href="description.html">Description</a>
+                    <a class="button" href="graphics.html">Graphics</a>
+                    <a class="button" href="info.html">Info</a>
+                    <a class="button" href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
+                </nav-menu>
+
+                <div id="page-content" class="ftop-bottom">
+
+                    <header id="header">
+                        <a class="button header" href="index.html">My first website!</a>
+                    </header>
+
+                    <div class="img-container">
+                        <iframe src="https://www.youtube.com/embed/k2IydkL3EOs"></iframe>
+                        <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages
+                            and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad
+                            of cornerstone technologies for the World Wide Web. Web browsers receive HTML documents
+                            from a web server or from local storage and render the documents into multimedia web pages.
+                            HTML describes the structure of a web page semantically and originally included cues for
+                            the appearance of the document.
+                        </p>
+                    </div>
+
+                    <div id="contact-container" class="fleft-right">
+
+                        <fieldset id="contact" class="ftop-bottom">
+                            <legend>Contact</legend>
+
+                            <label>
+                                Username
+                                <input id="username" type="text" name="username" placeholder="Your name"/>
+                            </label>
+
+                            <label>
+                                Email
+                                <input id="email" type="text" name="email" placeholder="Your email" required/>
+                            </label>
+
+                            <label>
+                                Message
+                                <textarea id="message" class="textarea" name="message" rows="10">Add your message here</textarea>
+                            </label>
+
+                            <button id="submit-btn" class="submit-btn" type="button" onclick="sendMessage()" disabled>
+                                Send message
+                            </button>
+
+                        </fieldset>
+
+                        <div id="contact-message" class="ftop-bottom">
+                            <h1>Feel free to contact me at your convenience:</h1>
+                            <p>
+                                <p><strong>Email:</strong> Wojciech.m1997@gmail.com</p>
+                                <p><strong>Phone:</strong> 123 123 123</p>
+                                <img id="codecool" src="assets/codecool.png" alt="codecool.png"/>
+                        </div>
+
+                    </div>
                 </div>
 
-                <article class="content long-text group">
-                    <h1>Stefan Lochner</h1> (the Dombild Master or Master Stefan) (c. 1410–1451) was a German painter
-                    working in the late "soft style" of the International Gothic. His paintings combine that era's
-                    tendency toward long flowing lines and brilliant colours with the realism, virtuoso surface
-                    textures and innovative iconography of the early Northern Renaissance. Based in Cologne, a
-                    commercial and artistic hub of northern Europe, Lochner was one of the most important German
-                    painters before Albrecht Dürer. Extant works include single-panel oil paintings, devotional
-                    polyptychs and illuminated manuscripts, which often feature fanciful and blue-winged angels.
-                    Today some thirty-seven individual panels are attributed to him with confidence.
-                </article>
-
-                <article class="content long-text group">
-                    <h1>Operation Vanguard</h1> is a Military Police Joint Task Force (JTF) set up by the President of Ghana
-                    in 2017 to combat the operation of galamsey in the country. Galamseyers are illegal miners and
-                    have over the years depleted Ghana's forest cover. Their activities also pollute water bodies due
-                    to the crude and unregulated nature of the mining process.
-                </article>
-
-                <footer id="primary-footer" class="container group">
-                    <small>&copy; null++ studios</small>
-                </footer>
             </div>
+
+            <footer id="primary-footer" class="container group">
+                <small>&copy; null++ studios</small>
+            </footer>
         </div>
 
+        <script src="js/contactValidator.js"></script>
+        <script src="js/contactSubmitBtnBehaviour.js"></script>
+        <script>
+            var direction = 7;
+            var color = 150;
+            var rotate = 0;
+            window.onscroll = function (e) {
+                if (color <= 0 || color >= 255) direction *= -1;
+                color += direction;
+                rotate += 3;
+                document.body.style.setProperty('--contact-bg-color', color);
+                document.body.style.setProperty('--codecool-rotation', (rotate + "deg"));
+            }
+        </script>
     </body>
 
 </html>
